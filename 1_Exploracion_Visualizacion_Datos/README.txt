@@ -1,0 +1,1 @@
+La finalidad de este Dashboard es la de comparar los precios medios de los diferentes tipos de estancia con respecto a los preceios medios de Madrid
