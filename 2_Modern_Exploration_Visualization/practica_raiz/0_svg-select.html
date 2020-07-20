@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>SVG</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        /*circle {
+            fill: violet;
+            stroke: brown;
+            stroke-width: 12;
+        }
+        
+        .ejemplo {
+            opacity: 0.5;
+        }*/
+    </style>
+</head>
+
+<body>
+    <svg width="800" height="500">
+        <!--Creacion de elementos basicos-->
+        <rect x=20 y=50 width="100" height="50"></rect>
+        <!--Creacion de elementos path-->
+        <path d="M 100 100 L 200 100 L 150 200 z" />
+        <!--Elemento g agrupador de elementos-->
+        <g transform="translate(400,250)">
+            <path transform="translate(45,-50)" class="ejemplo" d="M 30 30
+            A 45 45, 0, 1, 1, 75 75
+            L 75 30 Z" fill="blue" />
+            <ellipse rx="50" ry="25" />
+            <circle r=5></circle>
+            <circle id="target" cx=50 r=10 class="ejemplo"></circle>
+            <circle cx=75 r=15></circle>
+            <circle cx=100 r=20 class="ejemplo"></circle>
+        </g>
+    </svg>
+
+    <script>
+        //d3.select("#target").attr("fill", "orange");
+        //d3.select("circle").attr("fill", "orange");
+        //d3.selectAll("circle").attr("fill", "orange");
+        //d3.select(".ejemplo").attr("fill", "orange");
+        /*d3.select("g")
+            .append("circle")
+            .attr("cx", "150")
+            .attr("r", 15);*/
+        d3.select("svg")
+            .append("circle")
+            .attr("cx", "150")
+            .attr("cy", "250")
+            .attr("r", 15);
+
+        //console.log(d3.select("circle"))
+    </script>
+</body>
