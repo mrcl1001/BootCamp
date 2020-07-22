@@ -121,7 +121,7 @@ var tooltip = d3.select("div")
     .style("position", "absolute")
     .style()
 
-/*console.log(d3.min(data, (d) => {
+/*console.log(d3.min(data, (d) => {sqza
 return d.area
 }))*/
 
