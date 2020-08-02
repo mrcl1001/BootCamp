@@ -1,2 +1,0 @@
-# Modern Exploration Y Visualization
-
