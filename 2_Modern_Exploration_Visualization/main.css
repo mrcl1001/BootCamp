@@ -1,0 +1,10 @@
+    #div_mapa {
+        width: 800px;
+        height: 700px;
+    }
+    
+    #div_tabla {
+        margin-left: 820px;
+        margin-top: 380px;
+        position: absolute;
+    }
