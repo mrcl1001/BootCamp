@@ -1,0 +1,33 @@
+1º- En los Settings de Docker, en el apartado de General solo dejo seleccionados:
+		- Start Docker DeskTop...
+		- Automatically chech for updates
+	Pincho el botón de "Guardar y Reiniciar"
+
+2º Con esto rompo Docker y me dice que no está habilitado Hyper-V y no se puede arrancar docker
+
+3º Arranco un ternminal de PowerShell como administrador
+
+4º Copio y pego este comando:
+	Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+	*** Solo si en lugar de un Power Shell abrís un cmd poned esto en lugar de lo de arriba
+		DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
+
+5º Cuando termina renicio el equipo
+
+6º Arranco Docker
+	- Si os sale un mensaje como que no hay nad apor defecto o algo así, ejecuto uel co,mando que pone que hay que planzar, en mi caso me salió este:
+		docker run -d -p 80:80 docker/getting-started
+
+7º Abro otro Power Shell como admin y pongo la acción del principio de clase:
+	docker pull sequenceiq/hadoop-docker:2.7.1
+	
+8º Ahora en los Settings de docker me sale la opción de aumentar la memoria
+
+9º Ahora me funciona correctamente con el comando:
+	docker run -p 50070:50070 -p 8088:8088 -it  sequenceiq/hadoop-docker:2.7.1 /bin/bash -bash
+	
+	
+LISTO!!
+
+
+
