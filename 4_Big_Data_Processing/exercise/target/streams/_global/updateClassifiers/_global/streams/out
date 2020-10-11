@@ -1,0 +1,4 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/C:/KEEPCODING/_MARCELO/BootCamp/4_Big_Data_Processing/final-exercise/exercise/"), "exercise")...
+[debug] Done updating ProjectRef(uri("file:/C:/KEEPCODING/_MARCELO/BootCamp/4_Big_Data_Processing/final-exercise/exercise/"), "exercise")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
