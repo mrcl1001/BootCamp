@@ -5,6 +5,7 @@
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
+library(vcov)
 options(repr.plot.height=4,repr.plot.width=6)
 ```
 
@@ -437,7 +438,13 @@ Responde con su correspondiente margen de error del 95%, ¿cuantos euros increme
 
 
 ```python
-confint
+modelo <- lm(data = barrio_sol_filter, formula= MetrosCuadrados ~ Precio)
+summary(modelo)
+modelo
+intervalo_confianza <- confint(object = modelo, parm = "Precio", level = 0.95)
+intervalo_confianza
+prediccion_confianza <- predict(modelo, barrio_sol_filter,interval = 'confidence')
+head(prediccion_confianza)
 ```
 
 Responde con su correspondiente margen de error del 95%, ¿cuantos euros incrementa el precio del alquiler por cada habitación?
