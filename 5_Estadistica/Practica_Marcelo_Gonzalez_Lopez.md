@@ -364,7 +364,6 @@ ggplot(data=tamanios_df_2graf, aes(MetrosCuadrados)) + geom_density(adjust = 3) 
 
 tamanios_df_2graf <- filter(airbnb_entire_Apartments, airbnb_entire_Apartments$Barrio=='Trafalgar', !is.na(airbnb_entire_Apartments$MetrosCuadrados))
 ggplot(data=tamanios_df_2graf, aes(MetrosCuadrados)) + geom_density(adjust = 3) + ylab('Trafalgar')
-
 ```
 
 Esta claro que las medias de cada uno de estos 5 barrios parecen ser diferentes, pero ¿son estadísticamente diferentes?
