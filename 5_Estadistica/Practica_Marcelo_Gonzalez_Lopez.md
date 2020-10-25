@@ -314,7 +314,8 @@ Dibuja el diagrama de densidad de distribución de los diferentes precios. Serí
 #DiagramasDistribucion <- function(coll){
 #    for (bar in coll){
 #        barrio_df_2graf <- filter(airbnb_entire_Apartments, airbnb_entire_Apartments$Barrio==bar)
-#        ggplot(data=barrio_df_2graf, aes(Precio)) +  geom_density(adjust = 3) + ylab(bar)
+#        grafica <- ggplot(data=barrio_df_2graf, aes(Precio)) +  geom_density(adjust = 3) + ylab(bar)
+#        print(grafica)
 #    }
 #}
 #DiagramasDistribucion(barrios_mas_precio_5$Barrio)
