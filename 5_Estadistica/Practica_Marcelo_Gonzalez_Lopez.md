@@ -438,9 +438,12 @@ Responde con su correspondiente margen de error del 95%, ¿cuantos euros increme
 
 
 ```python
-modelo <- lm(data = barrio_sol_filter, formula= MetrosCuadrados ~ Precio)
-summary(modelo)
-modelo
+modelo1 <- lm(data = barrio_sol_filter, formula= MetrosCuadrados ~ Precio)
+summary(modelo1)
+modelo1
+
+print(paste("En torno a los ", modelo1$coefficients[2]))
+
 intervalo_confianza <- confint(object = modelo, parm = "Precio", level = 0.95)
 intervalo_confianza
 prediccion_confianza <- predict(modelo, barrio_sol_filter,interval = 'confidence')
@@ -451,7 +454,11 @@ Responde con su correspondiente margen de error del 95%, ¿cuantos euros increme
 
 
 ```python
+modelo2 <- lm(data = barrio_sol_filter, formula = NumDormitorios ~ Precio)
+summary(modelo2)
+modelo2
 
+print(paste("En torno a los ", modelo2$coefficients[2]))
 ```
 
 ¿Cual es la probabilidad de encontrar, en el barrio de Sol, un apartamento en alquiler con 3 dormitorios?
