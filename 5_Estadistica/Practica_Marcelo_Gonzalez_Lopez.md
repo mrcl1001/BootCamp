@@ -437,7 +437,7 @@ Responde con su correspondiente margen de error del 95%, ¿cuantos euros increme
 
 
 ```python
-
+confint
 ```
 
 Responde con su correspondiente margen de error del 95%, ¿cuantos euros incrementa el precio del alquiler por cada habitación?
