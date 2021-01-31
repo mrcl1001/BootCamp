@@ -1,0 +1,833 @@
+2021.01.31 18:26:47 INFO  Started: Metals version 0.9.5 in workspace 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise' for client vscode.
+2021.01.31 18:26:48 INFO  time: initialize in 0.95s
+2021.01.31 18:26:52 WARN  Build server is not auto-connectable.
+2021.01.31 18:26:52 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 18:26:59 INFO  no build target: using presentation compiler with only scala-library
+2021.01.31 18:26:59 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\IBatchJob.scala
+2021.01.31 18:37:45 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 18:40:04 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\IStreamingJob.scala
+2021.01.31 18:40:16 WARN  no build target for: C:\KEEPCODING\big-data-processing-spark-y-scala\final-exercise\solution\src\main\scala\io\keepcoding\spark\exercise\streaming\AntennaStreamingJob.scala
+2021.01.31 18:40:49 WARN  no build target for: C:\KEEPCODING\big-data-processing-spark-y-scala\final-exercise\solution\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 18:41:52 WARN  no build target for: C:\KEEPCODING\big-data-processing-spark-y-scala\final-exercise\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 18:55:09 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 18:55:29 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\IStreamingJob.scala
+2021.01.31 18:55:31 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 18:55:37 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\IStreamingJob.scala
+2021.01.31 19:00:38 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 19:00:53 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 19:02:22 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 19:02:26 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\IBatchJob.scala
+ene 31, 2021 7:21:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 126
+2021.01.31 19:31:08 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+2021.01.31 19:31:08 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+2021.01.31 19:31:08 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	... 3 more
+Exception in thread "pool-3-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	... 3 more
+2021.01.31 19:31:15 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 19:35:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+2021.01.31 19:35:21 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+ene 31, 2021 7:35:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 269
+ene 31, 2021 7:35:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 270
+ene 31, 2021 7:35:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 272
+2021.01.31 19:37:16 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 19:43:07 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+ene 31, 2021 7:53:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 507
+ene 31, 2021 8:00:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 707
+2021.01.31 20:02:33 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:02:33 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:03:11 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:05:56 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+2021.01.31 20:05:56 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+2021.01.31 20:05:56 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:05:56 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala' because it doesn't belong to a build target.
+2021.01.31 20:08:13 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:08:32 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:11:47 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:12:15 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:15:02 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:15:05 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:15:05 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:15:07 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:15:07 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:16:03 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:21:11 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:21:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 8:21:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:43 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:44 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:44 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:21:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2021.01.31 20:22:27 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 8:22:40 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:22:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:22:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:22:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:22:43 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:22:44 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:22:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2021.01.31 20:24:04 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:25:14 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:25:34 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:27:08 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:27:43 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:27:43 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 8:27:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1726
+2021.01.31 20:28:00 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:28:04 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:28:08 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:28:08 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 8:28:38 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:28:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:28:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:28:43 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:28:43 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:28:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 8:28:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2021.01.31 20:28:48 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:30:01 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:30:04 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:30:04 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:31:40 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:31:53 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:31:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:31:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:32:48 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:35:20 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 8:35:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2372
+2021.01.31 20:35:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:46 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:55 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:55 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:55 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:35:58 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:36:55 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:38:13 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:27 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:34 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:34 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:35 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:35 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:35 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:37 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:37 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:38 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:54 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:54 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:39:57 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:40:32 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:40:32 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:41:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:41:44 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:41:45 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:41:48 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:41:48 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:41:48 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:42:53 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:42:53 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:42:56 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:42:56 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:48:30 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:52:50 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 20:55:03 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:55:03 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:55:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:56:17 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:56:29 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 20:56:29 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 20:58:11 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 20:59:09 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:00:06 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:00:38 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:39 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:39 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:39 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:00:43 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:27 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:27 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:27 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:28 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:02:54 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+ene 31, 2021 9:03:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3978
+2021.01.31 21:03:07 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:03:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:23 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:23 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:23 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:25 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:26 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:26 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:44 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:44 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:44 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:46 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:46 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:47 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:47 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:47 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:47 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:48 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:03:48 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:15 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:40 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:40 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:40 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:04:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:05:20 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 21:05:40 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:05:50 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:05:50 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:07:50 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\provisioner\JdbcProvisioner.scala
+2021.01.31 21:10:17 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 21:11:41 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:17:25 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:17:36 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:18:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:18:23 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:18:26 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:18:26 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:18:26 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:18:26 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 9:19:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 4612
+2021.01.31 21:19:37 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:19:37 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:19:49 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:19:49 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:19:53 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:19:53 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:20:52 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:20:52 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:20:55 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:20:55 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:20:55 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:20:56 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:21:04 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:21:04 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:21:04 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:21:05 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:21:26 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:23:12 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:23:12 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:23:58 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 9:24:52 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:24:56 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:24:56 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:24:59 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:24:59 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:13 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:13 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2021.01.31 21:25:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:25:17 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+ene 31, 2021 9:25:21 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:24 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:24 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:26 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+ene 31, 2021 9:25:26 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: String index out of range: -2
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2021.01.31 21:27:34 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 21:28:36 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:28:36 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:28:41 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+Exception in thread "pool-3-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	... 3 more
+2021.01.31 21:28:41 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:28:41 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:28:41 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:28:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:28:42 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:29:43 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:29:43 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 21:29:43 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:31:14 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 21:31:16 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:31:33 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:31:33 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:31:33 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:31:34 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:31:34 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:31:34 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala
+2021.01.31 21:31:34 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\batch\BatchJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:32:37 WARN  code navigation does not work for the file 'C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala' because it doesn't belong to a build target.
+2021.01.31 21:32:37 WARN  no build target for: C:\KEEPCODING\_MARCELO\BootCamp\4_Big_Data_Processing\exercise\src\main\scala\io\keepcoding\spark\exercise\streaming\StreamingJob.scala
+2021.01.31 21:32:41 INFO  shutting down Metals

@@ -2,85 +2,126 @@ package io.keepcoding.spark.exercise.batch
 
 import java.time.OffsetDateTime
 
-import io.keepcoding.spark.exercise.streaming.StreamingJob.spark
-import org.apache.spark.sql.catalyst.dsl.expressions.{DslExpression, StringToAttributeConversionHelper}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
+
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types.DoubleType
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
+import org.apache.spark.sql.types.TimestampType
 
-object BatchJob extends IBatchJob {
+object BatchJob {
 
-  def main(args: Array[String]): Unit = run(args)
+  //**************************************
+  //**************************************
+  def main(args: Array[String]): Unit = 
+  {
+    val Jdbc_url        = args(0)
+    val Storage_url     = args(1)
+    val filterDate      = OffsetDateTime.parse(args(2))
+    val user_postgre    = "postgres"
+    val pass_postgre    = "keepcoding"
+    val driver_postgre  = "org.postgresql.Driver"
 
-  override val spark: SparkSession = SparkSession
-    .builder()
-    .master("local[20]")
-    .appName("Ejercicio Final de Marcelo")
-    .getOrCreate()
+    val spark = SparkSession.builder()
+      .master("local[20]")
+      .appName("Ejercicio Final de Marcelo, segundo Intento")
+      .getOrCreate()
 
-  override def readFromStorage(storagePath: String, filterDate: OffsetDateTime): DataFrame = {
-    spark
-      .read
-      .format("parquet")
-      .load(s"${storagePath}/data")
-      .filter(
-          $"hour" === filterDate.getHour
-      )
-  }
+    import spark.implicits._
 
-  override def readUserMetadata(jdbcURI: String, jdbcTable: String, user: String, password: String): DataFrame = {
-    spark
+    val user_metadata = spark
       .read
       .format("jdbc")
-      .option("url", jdbcURI)
-      .option("dbtable", jdbcTable)
-      .option("user", user)
-      .option("password", password)
+      .option("driver", driver_postgre)
+      .option("url", Jdbc_url)
+      .option("dbtable", "user_metadata")
+      .option("user", user_postgre)
+      .option("password", pass_postgre)
       .load()
-  }
 
-  import spark.implicits._
+    val device_data = spark
+      .read
+      .format("parquet")
+      .option("path", s"${Storage_url}/data")
+      .load()
+      .filter(
+        $"year"   === filterDate.getYear &&
+        $"month"  === filterDate.getMonthValue &&
+        $"day"    === filterDate.getDayOfMonth &&
+        $"hour"   === filterDate.getHour
+      )
+      .persist()
 
-  override def enrichAntennaWithUserMetadata(antennaDF: DataFrame, user_metadataDF: DataFrame): DataFrame = {
-    antennaDF.as("antenna")
+    val totalCountBytesAntena = 
+      computaBytesDeAntena(device_data, "id", "user_bytes_total", filterDate)
+      .persist()
+
+    val totalQuotaLimit = 
+      totalCountBytesAntena.as("user")
+      .select($"id", $"value")
       .join(
-        user_metadataDF.as("user_metadata"),
-        $"antenna.id" === $"user_metadata.id"
-      ).drop($"user_metadata.id")
-  }
+        user_metadata.select($"id", $"email", $"quota").as("metadata"),
+        $"user.id" === $"metadata.id" && $"user.value" > $"metadata.quota"
+      )
+      .select($"metadata.email", $"user.value".as("usage"), $"metadata.quota", lit(filterDate.toEpochSecond).cast(TimestampType).as("timestamp"))
 
-  override def computeDevicesCountByAntena(dataFrame: DataFrame, app: String): DataFrame = {
+    Await.result(
+      Future.sequence(
+        Seq(
+          guardadoATablas(
+              computaBytesDeAntena(device_data, "antenna_id", "antenna_bytes_total", filterDate), 
+              Jdbc_url, "bytes_hourly", user_postgre, pass_postgre, driver_postgre
+          ),
+          guardadoATablas(
+              computaBytesDeAntena(device_data, "app", "app_bytes_total", filterDate), 
+              Jdbc_url, "bytes_hourly", user_postgre, pass_postgre, driver_postgre
+          ),
+          guardadoATablas(totalCountBytesAntena, Jdbc_url, "bytes_hourly", user_postgre, pass_postgre, driver_postgre),
+          guardadoATablas(totalQuotaLimit, Jdbc_url, "user_quota_limit", user_postgre, pass_postgre, driver_postgre)
+        )
+      ), 
+      Duration.Inf
+    )
+
+  }
+  //**************************************
+  //**************************************
+  def computaBytesDeAntena(
+      dataFrame: DataFrame, 
+      column: String, 
+      metric: String, 
+      filterDate: OffsetDateTime): DataFrame = 
+  {
+    import dataFrame.sparkSession.implicits._
+
     dataFrame
-      .where($"app" === app)
-      .select($"timestamp", $"value")
-      .withWatermark("timestamp", "1 hour")
-      .groupBy($"value", window($"timestamp", "1 hour"))
-      .agg(
-        sum($"bytes").as("value")
-      ).select($"window.start".as("timestamp"), $"value")
-
+      .select(col(column).as("id"), $"bytes")
+      .groupBy($"id")
+      .agg(sum($"bytes").as("value"))
+      .withColumn("type", lit(metric))
+      .withColumn("timestamp", lit(filterDate.toEpochSecond).cast(TimestampType))
   }
-
-  override def writeToJdbc(dataFrame: DataFrame, jdbcURI: String, jdbcTable: String, user: String, password: String): Unit = {
+  //**************************************
+  //**************************************
+  def guardadoATablas(
+      dataFrame: DataFrame, 
+      jdbcURI: String, 
+      jdbcTable: String, 
+      user: String, 
+      password: String, 
+      driver: String): Future[Unit] = Future 
+  {
     dataFrame
       .write
       .mode(SaveMode.Append)
       .format("jdbc")
-      .option("driver", "org.postgresql.Driver")
+      .option("driver", driver)
       .option("url", jdbcURI)
       .option("dbtable", jdbcTable)
       .option("user", user)
       .option("password", password)
       .save()
-  }
-
-  override def writeToStorage(dataFrame: DataFrame, storageRootPath: String): Unit = {
-    dataFrame
-      .write
-      .partitionBy("hour")
-      .format("parquet")
-      .mode(SaveMode.Overwrite)
-      .save(s"${storageRootPath}/historical")
   }
 
 }

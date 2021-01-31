@@ -1,119 +1,120 @@
 package io.keepcoding.spark.exercise.streaming
 
-import org.apache.spark.sql.catalyst.ScalaReflection
-import org.apache.spark.sql.functions.{col, from_json, hour, sum, window}
-import org.apache.spark.sql.types.{StringType, StructType}
-
-import scala.concurrent.Future
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types.{StringType, StructType, LongType, StructField, TimestampType}
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
 
-object StreamingJob extends IStreamingJob {
+object StreamingJob {
 
-  //  Método MAIN inicializador del Objeto
-  //----------------------------------------
-  def main(args: Array[String]): Unit = run(args)
+  //**************************************
+  //**************************************
+  def main(args: Array[String]): Unit = 
+  {
+    val Server          = args(0)
+    val Jdbc_url        = args(1)
+    val Storage_url     = args(2)
+    val user_postgre    = "postgres"
+    val pass_postgre    = "keepcoding"
+    val driver_postgre  = "org.postgresql.Driver"
 
-  //  Para leer de la API de Spark
-  //----------------------------------------
-  override val spark: SparkSession = SparkSession
-    .builder()
-    .master("local[20]")
-    .appName("Ejercicio Final de Marcelo")
-    .getOrCreate()
+    val spark = SparkSession.builder()
+      .master("local[20]")
+      .appName("Ejercicio Final de Marcelo")
+      .getOrCreate()
 
-  //  Lectura de los datos que nos llegan desde Kafka, devolviendo un DataFrame
-  //----------------------------------------
-  override def readFromKafka(kafkaServer: String, topic: String): DataFrame = {
-    spark
+    import spark.implicits._
+
+    val schema = StructType(
+      Seq(
+        StructField("timestamp", LongType, nullable = false),
+        StructField("id", StringType, nullable = false),
+        StructField("antenna_id", StringType, nullable = false),
+        StructField("bytes", LongType, nullable = false),
+        StructField("app", StringType, nullable = false)
+      )
+    )
+
+    val device = spark
       .readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", kafkaServer)
-      .option("subscribe", topic)
+      .option("kafka.bootstrap.servers", Server)
+      .option("subscribe", "devices")
+      .option("startingOffsets", "earliest")
       .load()
-  }
+      .select(from_json($"value".cast(StringType), schema).as("json"))
+      .select($"json.*")
 
-  //  Parseamos el json Antenna
-  //----------------------------------------
-  override def parserJsonData(dataFrame: DataFrame): DataFrame = {
-    val schema = ScalaReflection.schemaFor[AntennaMessage].dataType.asInstanceOf[StructType]
+    val storage = Future {
+      device
+        .select(
+          $"id", $"antenna_id", $"bytes", $"app",
+          year($"timestamp".cast(TimestampType)).as("year"),
+          month($"timestamp".cast(TimestampType)).as("month"),
+          dayofmonth($"timestamp".cast(TimestampType)).as("day"),
+          hour($"timestamp".cast(TimestampType)).as("hour")
+        )
+        .writeStream
+        .partitionBy("year", "month", "day", "hour")
+        .format("parquet")
+        .option("path", s"${Storage_url}/data")
+        .option("checkpointLocation", s"${Storage_url}/checkpoint")
+        .start()
+        .awaitTermination()
+    }
+
+    Await.result(
+      Future.sequence(
+        Seq(
+          bytesTotales(device, "app", Jdbc_url, user_postgre, pass_postgre, driver_postgre), 
+          bytesTotales(device.withColumnRenamed("id", "user"), "user", Jdbc_url, user_postgre, pass_postgre, driver_postgre), 
+          bytesTotales(device.withColumnRenamed("antenna_id", "antenna"), "antenna", Jdbc_url, user_postgre, pass_postgre, driver_postgre), 
+          storage
+        )
+      ), 
+      Duration.Inf
+    )
+
+  }
+  //**************************************
+  //**************************************
+  def bytesTotales(
+    dataFrame: DataFrame, 
+    column: String, 
+    jdbcURI: String,
+    user: String, 
+    password: String, 
+    driver: String): Future[Unit] = Future 
+  {
+    import dataFrame.sparkSession.implicits._
 
     dataFrame
-      .select(from_json(col("value").cast(StringType), schema).as("json"))
-      .select("json.*")
-  }
-
-  //  Leemos los datos del dataset estático de user_metadatos en postgreSQL
-  //----------------------------------------
-  override def readUserMetadata(jdbcURI: String, jdbcTable: String, user: String, password: String): DataFrame = {
-    spark
-      .read
-      .format("jdbc")
-      .option("driver", "org.postgresql.Driver")
-      .option("url", jdbcURI)
-      .option("dbtable", jdbcTable)
-      .option("user", user)
-      .option("password", password)
-      .load()
-  }
-
-  import spark.implicits._
-
-  // Hacemos un join de los datos de las antenas en tiempo real con los user_metadata
-  //----------------------------------------
-  override def enrichAntennaWithUserMetadata(antennaDF: DataFrame, user_metadataDF: DataFrame): DataFrame = {
-    antennaDF.as("antenna")
-      .join(
-        user_metadataDF.as("user_metadata"),
-        $"antenna.id" === $"user_metadata.id"
-      ).drop($"user_metadata.id")
-  }
-
-  //  Ahora salvamos en el Storage los datos que estarán filtrados por Horas
-  //----------------------------------------
-  override def writeToStorage(dataFrame: DataFrame, storageRootPath: String): Future[Unit] = Future{
-    dataFrame
-      .withColumn("hour", hour($"timestamp"))
+      .select($"timestamp".cast(TimestampType).as("timestamp"), col(column), $"bytes")
+      .withWatermark("timestamp", "6 minutes")
+      .groupBy(window($"timestamp", "5 minutes"), col(column))
+      .agg(sum($"bytes").as("total_bytes"))
+      .select(
+        $"window.start".cast(TimestampType).as("timestamp"),
+        col(column).as("id"),
+        $"total_bytes".as("value"),
+        lit(s"${column}_total_bytes").as("type")
+      )
       .writeStream
-      .partitionBy("hour")
-      .format("parquet")
-      .option("path", s"${storageRootPath}/data")
-      .option("checkpointLocation", s"${storageRootPath}/checkpoint")
-      .start()
-      .awaitTermination()
-  }
-
-  //  Sumatorio de todos los datos de la tabla enviada por parametro app
-  //----------------------------------------
-  override def computeDevicesCountByAntena(dataFrame: DataFrame, app: String): DataFrame = {
-    dataFrame
-      .where($"app" === app)
-      .select($"timestamp", $"value")
-      .withWatermark("timestamp", "1 hour")
-      .groupBy($"value", window($"timestamp", "1 hour"))
-      .agg(
-        sum($"bytes").as("value")
-      ).select($"window.start".as("timestamp"), $"value")
-  }
-
-  //  Salvado de los datos en la tabla creada
-  //----------------------------------------
-  override def writeToJdbc(dataFrame: DataFrame, jdbcURI: String, jdbcTable: String, user: String, password: String): Future[Unit] = Future {
-    dataFrame
-      .writeStream
-      .foreachBatch { (data: DataFrame, batchId: Long) =>
-        data
+      .foreachBatch((dataset: DataFrame, batchId: Long) =>
+        dataset
           .write
           .mode(SaveMode.Append)
           .format("jdbc")
-          .option("driver", "org.postgresql.Driver")
+          .option("driver", driver)
           .option("url", jdbcURI)
-          .option("dbtable", jdbcTable)
+          .option("dbtable", "bytes")
           .option("user", user)
           .option("password", password)
           .save()
-      }
+      )
       .start()
       .awaitTermination()
   }
